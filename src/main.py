@@ -15,7 +15,7 @@ class Bibliotheque:
 
     def ajouter_livre(self, livre):
         if not any(
-            l.titre == livre.titre and l.auteur == livre.auteur for l in self.catalogue
+            a.titre == livre.titre and a.auteur == livre.auteur for a in self.catalogue
         ):
             self.catalogue.append(livre)
             return True

@@ -29,7 +29,7 @@ def test_retirer_livre(bibliotheque):
 
 def test_emprunter_livre(bibliotheque):
     assert bibliotheque.emprunter_livre("1984") is True
-    livre = next(l for l in bibliotheque.catalogue if l.titre == "1984")
+    livre = next(a for a in bibliotheque.catalogue if a.titre == "1984")
     assert livre.emprunte is True
     assert bibliotheque.emprunter_livre("1984") is False  # Déjà emprunté
 
@@ -37,7 +37,7 @@ def test_emprunter_livre(bibliotheque):
 def test_retourner_livre(bibliotheque):
     bibliotheque.emprunter_livre("1984")
     assert bibliotheque.retourner_livre("1984") is True
-    livre = next(l for l in bibliotheque.catalogue if l.titre == "1984")
+    livre = next(a for a in bibliotheque.catalogue if a.titre == "1984")
     assert livre.emprunte is False
     assert bibliotheque.retourner_livre("1984") is False  # Déjà retourné
 
