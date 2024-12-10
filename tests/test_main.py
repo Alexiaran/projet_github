@@ -1,5 +1,5 @@
 import pytest
-from library_management import Livre, Bibliotheque
+from src.main import Livre, Bibliotheque
 
 @pytest.fixture
 def bibliotheque():
