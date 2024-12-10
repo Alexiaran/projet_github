@@ -50,26 +50,3 @@ class Bibliotheque:
     def afficher_catalogue(self):
         return [str(livre) for livre in self.catalogue]
 
-
-# Exemple d'utilisation
-if __name__ == "__main__":
-    biblio = Bibliotheque()
-
-    livre1 = Livre("1984", "George Orwell", 1949)
-    livre2 = Livre("Le Meilleur des Mondes", "Aldous Huxley", 1932)
-    livre3 = Livre("Fahrenheit 451", "Ray Bradbury", 1953)
-
-    biblio.ajouter_livre(livre1)
-    biblio.ajouter_livre(livre2)
-    biblio.ajouter_livre(livre3)
-
-    print("Catalogue initial:")
-    print("\n".join(biblio.afficher_catalogue()))
-
-    biblio.emprunter_livre("1984")
-    print("\nCatalogue après emprunt de '1984':")
-    print("\n".join(biblio.afficher_catalogue()))
-
-    biblio.retourner_livre("1984")
-    print("\nCatalogue après retour de '1984':")
-    print("\n".join(biblio.afficher_catalogue()))
