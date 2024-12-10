@@ -49,4 +49,3 @@ class Bibliotheque:
 
     def afficher_catalogue(self):
         return [str(livre) for livre in self.catalogue]
-
