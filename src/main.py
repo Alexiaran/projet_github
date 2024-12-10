@@ -14,7 +14,9 @@ class Bibliotheque:
         self.catalogue = []
 
     def ajouter_livre(self, livre):
-        if not any(l.titre == livre.titre and l.auteur == livre.auteur for l in self.catalogue):
+        if not any(
+            l.titre == livre.titre and l.auteur == livre.auteur for l in self.catalogue
+        ):
             self.catalogue.append(livre)
             return True
         return False
@@ -41,7 +43,9 @@ class Bibliotheque:
         return False
 
     def rechercher_livre(self, titre):
-        return [livre for livre in self.catalogue if titre.lower() in livre.titre.lower()]
+        return [
+            livre for livre in self.catalogue if titre.lower() in livre.titre.lower()
+        ]
 
     def afficher_catalogue(self):
         return [str(livre) for livre in self.catalogue]
