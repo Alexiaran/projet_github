@@ -1,8 +1,6 @@
-src
-===
+_sources
+========
 
 .. toctree::
    :maxdepth: 4
 
-   main
-   projet_github
