@@ -5,7 +5,6 @@ Module contents
 ---------------
 
 .. automodule:: projet_github
-   :members: Randazavony Alexia
+   :members:
    :undoc-members:
    :show-inheritance:
-
