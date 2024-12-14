@@ -12,6 +12,8 @@ Welcome to my Project's documentation!
 
 
 
+   modules.rst
+
 Indices and tables
 ==================
 
@@ -19,4 +21,11 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-   modules.rst
+Modules
+=======
+
+.. automodule:: main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

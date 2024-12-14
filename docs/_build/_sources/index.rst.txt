@@ -12,9 +12,20 @@ Welcome to my Project's documentation!
 
 
 
+   modules.rst
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Modules
+=======
+
+.. automodule:: main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
